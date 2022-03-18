@@ -10,7 +10,7 @@ This repository contains three folders named with the corresponding benchmarks.
 - MNIST
 - CIFAR-10
 
-Each folder contains the neural network required for verification along with the input properties and output properties. Specifically, for the MNIST and CIFAR-10 benchmarks, a input property consists of a input image and a perturbation value, and the output property is robustness over input range. For the ACASXu benchmark,  input range are given directly for each property, and the target output are also labeled.
+Each folder contains the neural network required for verification along with the input properties and output properties. Specifically, for the MNIST, a input property consists of a input image and a perturbation value, and the output property is robustness over input range. For the ACASXu and CIFAR-10, input range is given directly for each property, and the target output is also labeled.
 
 ## File Tree
 
