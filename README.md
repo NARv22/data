@@ -1,12 +1,11 @@
-# NARv Open Data
-
-
+# NARv Tool and Experimental Data
 
 ## About
 
-This repository contains the benchmarks and the experimental data for
-the ESEC/FSE 2022 submission entitled "**Abstraction and Refinement:
-Towards Scalable and Exact Verification of Neural Networks**".
+This repository contains the source code of NARv, the benchmarks and
+the experimental data for the ASPLOS'23 Fall submission #426 entitled
+"**Abstraction and Refinement: Towards Scalable and Exact Verification
+of Neural Networks**".
 
 The evaluation is performed on three widely-used benchmarks and datasets:
 - ACAS Xu
@@ -16,12 +15,13 @@ The evaluation is performed on three widely-used benchmarks and datasets:
 
 ## File Tree
 
-Our data is organized in three directories according to the above
-three benchmarks/datasets. The file tree is shown as follows.
+The repository is organized in four directories. The file tree is
+shown as follows.
 
 ```
 root
 ├── README.md
+├── tool
 ├── ACASXu
 │   ├── networks/
 │   ├── inputs/
@@ -36,6 +36,12 @@ root
     └── results/
 ```
 
+## tool
+
+The **tool/** directory contains all the source code of the tool
+implementation NARv with a README inside.
+
+
 ## ACAS Xu
 
 ACAS Xu contains 45 DNNs and is used for Performance Evaluation
@@ -47,9 +53,9 @@ comparing NARv with CEGAR-NN.
      perturbation thresholds ranging from 0.01 to 0.04.  Each file
      includes 20 inputs for that corresponding perturbation threshold.
 
-- **results/** contains experimental results for Figure 5 and Table 2
-    in the submission, and Figure 2 in the supplementary material,
-    organized w.r.t. the perturbation thresholds.
+- **results/** contains experimental results for Figures 5 and 7 and
+    Table 2 in the submission, organized w.r.t. the perturbation
+    thresholds.
 
     Each csv file named by the tool (e.g. NARv.csv) contains the
     experimental data for that tool. The columns are as follows.
@@ -76,9 +82,8 @@ comparing NARv[M] (resp., NARv[P]) with Marabou (resp., Planet).
 - **inputs/** contains 25 inputs. They are used for each perturbation
     threshold, which ranges from 0.02 to 0.05.
 
-- **results/** contains experimental results for Table 1 (upper part)
-    in the submission and Figure 1 in the supplementary material,
-    organized w.r.t. the perturbation thresholds.
+- **results/** contains experimental results for Table 1 and Figure 6
+    in the submission, organized w.r.t. the perturbation thresholds.
 
     Each csv file named by the two tools (e.g. NARv[M]_vs_Marabou.csv)
     contains the experimental data for the comparison between those
@@ -103,10 +108,10 @@ comparing NARv[M] (resp., NARv[P]) with Marabou (resp., Planet).
 - **inputs/** contains 48 inputs. There are 12 inputs for each
 perturbation threshold, which ranges from 0.001 to 0.004.
 
-- **results/** contains experimental results for Figure 4 and Table 1
-    (lower part) in the submission, and Figure 3 and Table 1 in the
-    supplementary material, organized w.r.t. the networks (4x100 and
-    6x100, respectively) and then the perturbation thresholds.
+- **results/** contains experimental results for Figures 4 and 8,
+     Tables 1 and 3 in the submission, organized w.r.t. the networks
+     (4x100 and 6x100, respectively) and then the perturbation
+     thresholds.
 
     Each csv file named by the two tools (e.g. NARv[M]_vs_Marabou.csv)
     contains the experimental data for the comparison between those
